@@ -59,11 +59,6 @@ h4 {
   color: var(--NeutralDark);
 }
 
-.capitalize {
-  text-transform: capitalize;
-}
-
-
 section {
   margin-bottom: 150px !important;
 }
@@ -72,6 +67,7 @@ header * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  max-width: 85%;
 }
 
 .menu-selected {
@@ -79,25 +75,36 @@ header * {
 }
 
 .nav {
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 0;
+   height: 70px;
+   align-items: center;
+  /*  
   font-size: 18px;
   margin-top: 20px;
   padding-bottom: 10px;
-  width: 90%;
+  width: 90%;*/
 }
 
 .nav-menu {
-  display: none;
+   display: flex;
+   margin-right: 30px;
+   flex-direction: row;
+   justify-content: flex-end;
+  /*display: none;
   list-style-type: none;
   color: var(--NeutralMedium);
   font-family: "Roboto";
   font-size: 17px;
   font-weight: 500;
-  line-height: 22px;
+  line-height: 22px;*/
 }
 
 .nav-link,
 .logo {
   text-decoration: none;
+  margin-left: 40px;
 }
 
 .nav-link:hover {
@@ -108,13 +115,16 @@ header * {
 .nav-menu li {
   text-align: center;
   margin: 15px auto;
+  list-style-type: none;
 }
 
 .logo {
-  position: absolute;
+  /*position: absolute;
   top: 20px;
   left: 30px;
-  margin-left: 0;
+  margin-left: 0;*/
+  position: static;
+  margin-left: 90px;
 }
 
 .nav a.btn {
@@ -146,23 +156,32 @@ header * {
   display: block;
 }
 
+/* HERO */
+.hero {
+  margin: 60px auto;
+  max-width: 85%;
+  display: flex;
+}
+
 .hero-text {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin: 0 auto;
   text-align: left;
+  width: 100%
+/*  text-align: left;
   margin-bottom: 50px;
   background-color: #f4f5fc;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
+  width: 100%;*/
 }
 
 .hero-text div.hero-btns {
   margin: 0;
-}
-
-.hero {
-  margin: 60px auto;
-  max-width: 85%;
 }
 
 .hero-btns a:hover {
@@ -204,6 +223,7 @@ header * {
 .hero-main-img {
   width: 600px;
   max-width: 100%;
+  display: inline-block;
 }
 
 .hero-card {
@@ -212,7 +232,7 @@ header * {
   top: 0%;
   left: -15%;
   background-color: rgba(0, 0, 0, 0);
-  display: none;
+  display: inline-block;
 }
 
 .hero-card-bottom {
@@ -222,12 +242,13 @@ header * {
   bottom: -15%;
 }
 
-/* --- CLIENTS SECTION --- */
+/*PARTNERS*/
 
 .partners {
   display: flex;
   flex-flow: row wrap;
   gap: 40px;
+  max-width: 85%;
 }
 
 .partner-logo {
@@ -239,8 +260,20 @@ header * {
   filter: grayscale(0);
 }
 
+/* PROJECTS */
+
 .projects {
   margin-top: 50px;
+  max-width: 85%;
+}
+
+.projects-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    margin: 0 auto;
+    width: 95%;
 }
 
 .projects h2 {
@@ -279,7 +312,7 @@ header * {
 
 .project-item h4,
 .project-item p,
-.project-item .learn-more {
+.project-item .project-link {
   padding-left: 10px;
 }
 
@@ -314,9 +347,11 @@ header * {
   margin: 10px;
 }
 
+/* CUSTOMERS */
+
 .customers {
   background-color: var(--NeutralDark);
-  background-image: url("/Images/testimonial-section/orbit.png");
+  background-image: url("/Img/testimonial-section/orbit.png");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -327,7 +362,7 @@ header * {
 
 .customers-img {
   background-color: rgba(0, 0, 0, 0);
-  display: none;
+  display: inline-block;
 }
 
 .customers-img img {
@@ -410,6 +445,31 @@ header * {
   border-radius: 50%;
 }
 
+/* SERVICES */
+
+.services {
+  max-width: 85%;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.service-item {
+   margin: 10px auto;
+   padding: 30px 15px;
+   width: 90%;
+   max-width: 1200px;
+}
+ 
+.service-item:hover {
+   box-shadow: 10px 5px 5px var(--NeutralMedium);
+}
+
 .services h2 {
   margin: 30px;
   text-align: left;
@@ -429,12 +489,6 @@ header * {
   margin-bottom: 50px;
 }
 
-.service-item {
-  margin: 20px auto;
-  padding: 30px 15px;
-  width: 80%;
-}
-
 .service-icon {
   background-color: var(--PrimaryLighter);
   border-radius: 50%;
@@ -447,6 +501,8 @@ header * {
 .service-icon img {
   background-color: var(--PrimaryLighter);
 }
+
+/* NEWSLETTER */
 
 .newsletter {
   padding: 40px 20px;
@@ -499,6 +555,8 @@ header * {
   cursor: pointer;
   color: var(--SecondaryDark);
 }
+
+/* FOOTER */
 
 .footer {
   margin-bottom: 50px;
