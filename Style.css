@@ -300,10 +300,6 @@ header * {
   box-shadow: 10px 5px 5px var(--NeutralMedium);
 }
 
-/*.project-text {
-  background-color: var(--White);
-}*/
-
 .project-item h4,
 .project-item p,
 .project-item a {
@@ -416,6 +412,9 @@ header * {
   color: var(--SecondaryDark);
   font-size: 16px;
 }
+.customers-content .Circle {
+    margin: 30px 0px;
+  }
 
 .customers-profile {
   background-color: var(--NeutralDark);
@@ -456,7 +455,7 @@ header * {
   justify-content: space-between;
   gap: 30px;
   margin: 0 auto;
-  width: 95%;
+  width: 98%;
 }
 
 .service-item {
@@ -505,8 +504,8 @@ header * {
 /* NEWSLETTER */
 
 .newsletter {
-  padding: 50px 30px;
-  margin: 1%;
+  padding: 100px 30px;
+  margin: 0px 0px;
 }
 
 .newsletter h2 {
