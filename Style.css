@@ -356,7 +356,7 @@ header * {
   background-repeat: no-repeat;
   position: relative;
   padding: 80px 0;
-  margin: 5%;
+  margin: 1%;
   text-align: center;
 }
 
@@ -505,8 +505,8 @@ header * {
 /* NEWSLETTER */
 
 .newsletter {
-  padding: 40px 20px;
-  margin: 5%;
+  padding: 50px 30px;
+  margin: 1%;
 }
 
 .newsletter h2 {
@@ -522,6 +522,8 @@ header * {
 
 .newsletter form {
   width: 70%;
+  display: flex;
+  gap: 15px;
 }
 
 .newsletter input {
@@ -532,6 +534,14 @@ header * {
   display: block;
   margin: auto;
 }
+
+.newsletter button {
+    border: none;
+    padding: 20px;
+    font-size: 18px;
+    display: block;
+    margin: auto;
+  }
 
 .newsletter input[type="email"] {
   background-image: url("/Img/newsletter/mail.svg");
@@ -546,12 +556,12 @@ header * {
   border: 1px solid var(--Black);
 }
 
-.newsletter input[type="button"] {
+.newsletter [type="submit"] {
   background-color: var(--Primary);
   color: var(--White);
 }
 
-.newsletter input[type="button"]:hover {
+.newsletter [type="button"]:hover {
   cursor: pointer;
   color: var(--SecondaryDark);
 }
@@ -560,23 +570,43 @@ header * {
 
 .footer {
   margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
 }
           
 .footer p,
 .footer a {
   color: var(--neutralMedium);
   font-weight: normal;
+  text-align: left;
 }
-          
+
+.footer-info {
+  display: flex;
+  flex-direction: column; /* Apila la imagen encima del texto */
+  align-items: flex-start; /* Alinea ambos elementos a la derecha */
+  text-align: left; /* Asegura que el texto también esté alineado a la derecha */
+  padding-top: 30px;
+}
+
+.footer-info img {
+  width: 60px; /* Ajusta según sea necesario */
+  margin: 0px 0px;
+  height: auto;
+}   
+
 .footer-info p {
-  margin: 20px 0;
+  margin: 30px 0px;
 }
           
 .footer-links {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   font-size: 17px;
+  gap: 25px;
   list-style: none;
+  justify-content: right;
 }
           
 .footer-links li {
@@ -588,7 +618,4 @@ header * {
   text-decoration: underline;
 }
           
-.footer-info img {
-  text-align: left;
-}
-          
+ 
