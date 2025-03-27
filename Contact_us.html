@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Circle Agency</title>
-    <link rel="stylesheet" href="Style2.css">
+    <link rel="stylesheet" href="Style_Contact.css">
     <script src="js.js"></script>
 </head>
 
@@ -22,42 +22,45 @@
         <li><a class="nav-link" href="#services">Services</a></li>
       </ul>
       <input type="checkbox" id="chkToggle">
-      <a class="btn" href="/Contact.us.html" id="contact-btn">Contact us</a>
+      <a class="btn" href="/Home.html" id="contact-btn">Contact us</a>
     </nav>
   </header>
 
   <section class="contact-us-section">
-   <h1 class="text-wrapper-5">Contact Us</h1>
+   <h1>Contact Us</h1>
    <form class="contact-form">
 
-   <div class="field-1">
-    <label for="full-name" class="text-wrapper-6">Full Name *</label>
-     <div class="text-field">
-     <input type="text" id="full-name" name="full-name" class="overlap-group" placeholder="Enter your full name" required/>
+   <div class="field_name">
+    <label for="full-name">Full Name</label>
+     <div>
+     <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required/>
      </div>
    </div>
 
-   <div class="field-2">
-    <label for="email" class="text-wrapper-8">Email</label>
-     <div class="overlap-group-wrapper">
-     <input type="email" id="email" name="email" class="overlap-group-2" placeholder="Enter your email address"/>
+   <div class="field_email-phone">
+    <div>
+    <label for="email">Email</label>
+     <div>
+     <input type="email" id="email" name="email" placeholder="Enter your email address" required/>
+     </div>
+     </div>
+     <div>
+     <label for="phone">Phone</label>
+     <div>
+     <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required/>
+     </div>
      </div>
    </div>
 
-   <div class="field-3">
-    <label for="message" class="text-wrapper-10">Message</label>
-     <div class="text-field-2">
-     <textarea id="message" name="message" class="overlap-group-3" placeholder="Write your message here ...."></textarea>
+   <div class="field-message">
+    <label for="message">Message</label>
+     <div>
+     <textarea id="message" name="message" placeholder="Write your message here ...." required></textarea>
      </div>
    </div>
 
-   <div class="field-4">
-    <label for="phone" class="text-wrapper-12">Phone</label>
-     <div class="overlap-group-wrapper">
-     <input type="tel" id="phone" name="phone" class="overlap-group-2" placeholder="Enter your phone number"/>
-     </div>
-   </div>
-     <button type="submit" class="submit"><span class="text-wrapper-14">Submit</span></button>
+
+     <button type="submit" class="submit" id="submitForm">Submit</button>
    </form>
   </section>
 
