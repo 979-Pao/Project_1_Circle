@@ -5,31 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Circle Agency</title>
-    <link rel="stylesheet" href="Style_Contact.css">
+    <link rel="stylesheet" href="/CSS/Global.css">
+    <link rel="stylesheet" href="/CSS/Contact_us.css">
     <script src="js.js"></script>
 </head>
 
 <body>
   <header>
     <nav class="nav">
-      <label class="nav-toggle" id="toggle-btn" for="chkToggle"></label>
+      <label class="nav-toggle" id="toggle-btn" for="chkToggle">
+        <i class="fa fa-bars burger"></i>
+      </label>
       <a class="logo" href="/Home.html">
         <img src="/Img/logos/circle.svg" alt="Circle Logo">
       </a>
-      <ul class="nav-menu" id="menu">
-        <li><a class="nav-link" href="/Home.html">Home</a></li>
-        <li><a class="nav-link" href="#projects">Projects</a></li>
-        <li><a class="nav-link" href="#services">Services</a></li>
-      </ul>
       <input type="checkbox" id="chkToggle">
-      <a class="btn" href="/Home.html" id="contact-btn">Contact us</a>
+      <ul class="nav-menu" id="menu">
+        <li><a class="nav-link menu-selected" href="/Home.html">Home</a></li>
+        <li><a class="nav-link menu-selected" href="/PAGES/Projects.html">Projects</a></li>
+        <li><a class="nav-link menu-selected" href="#services">Services</a></li>
+      </ul>
+      <a class="btn" href="/Home.html" id="contact-btn" style="display: inline;">Contact us</a>
     </nav>
   </header>
 
   <section class="contact-us-section">
-   <h1>Contact Us</h1>
    <form class="contact-form">
-
+    <h1>Contact Us</h1>
    <div class="field_name">
     <label for="full-name">Full Name</label>
      <div>
