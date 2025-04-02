@@ -11,22 +11,26 @@
 </head>
 
 <body>
-  <header>
-    <nav class="nav">
-      <label class="nav-toggle" id="toggle-btn" for="chkToggle">
-        <i class="fa fa-bars burger"></i>
+  <header class="header">
+    <div class="logo" href="Home.html">
+      <img src="/Img/logos/circle.svg" alt="Circle Logo">
+    </div>
+     <input type="checkbox" id="chkToggle" class="chkToggle" />
+     <label for="chkToggle" class="nav-toggle" id="toggle-btn" >
+        <span></span>
+        <span></span>
+        <span></span>
       </label>
-      <a class="logo" href="/Home.html">
-        <img src="/Img/logos/circle.svg" alt="Circle Logo">
-      </a>
-      <input type="checkbox" id="chkToggle">
-      <ul class="nav-menu" id="menu">
-        <li><a class="nav-link menu-selected" href="/Home.html">Home</a></li>
-        <li><a class="nav-link menu-selected" href="/PAGES/Projects.html">Projects</a></li>
-        <li><a class="nav-link menu-selected" href="#services">Services</a></li>
+      <nav class="nav">
+      <ul>
+        <li><a href="/Home.html">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Services</a></li>
       </ul>
-      <a class="btn" href="/Home.html" id="contact-btn" style="display: inline;">Contact us</a>
-    </nav>
+      </nav>
+      <div class="btn">
+        <a href="/PAGES/Contact_us.html" id="contact-btn">Contact us</a>
+      </div>
   </header>
 
   <section class="contact-us-section">
@@ -67,7 +71,7 @@
   </section>
 
   <footer class="footer">
-    <div class="footer-info">
+    <div class="footer-info" href="Home.html">
       <img src="/Img/logos/circle.svg" alt="Circle Logo">
       <p>2972 Westheimer Rd. Santa Ana, <br> Illinois 85486</p>
     </div>

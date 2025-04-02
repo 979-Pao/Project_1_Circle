@@ -2,7 +2,7 @@
 /* HERO */
 .hero {
   margin: 60px auto;
-  max-width: 85%;
+  max-width: 80%;
   display: flex;
 }
 
@@ -34,7 +34,11 @@
   background-color: var(--Primary);
   color: var(--White);
   display: inline;
-  margin-top: 30px;
+  margin: 5px;
+}
+.btn2 {
+  color: var(--NeutralMedium);
+  display: inline;
 }
 
 .btn a {
@@ -336,68 +340,3 @@
 .service-icon img {
   background-color: var(--PrimaryLighter);
 }
-
-/* NEWSLETTER */
-
-.newsletter {
-  padding: 100px 30px;
-  margin: 0px 0px;
-}
-
-.newsletter h2 {
-  margin-bottom: 20px;
-}
-
-.newsletter,
-.newsletter h2,
-.newsletter h3,
-.newsletter form {
-  background-color: var(--SecondaryLight);
-}
-
-.newsletter form {
-  width: 70%;
-  display: flex;
-  gap: 15px;
-}
-
-.newsletter input {
-  background-color: var(--White);
-  border: none;
-  padding: 20px;
-  font-size: 18px;
-  display: block;
-  margin: auto;
-}
-
-.newsletter button {
-    border: none;
-    padding: 20px;
-    font-size: 18px;
-    display: block;
-    margin: auto;
-  }
-
-.newsletter input[type="email"] {
-  background-image: url("/Img/newsletter/mail.svg");
-  background-repeat: no-repeat;
-  background-position: 5%;
-  border: 0,1px solid var(--White);
-  text-align: center;
-  width: 90%;
-}
-
-.newsletter input[type="email"]:hover {
-  border: 1px solid var(--Black);
-}
-
-.newsletter [type="submit"] {
-  background-color: var(--Primary);
-  color: var(--White);
-}
-
-.newsletter [type="button"]:hover {
-  cursor: pointer;
-  color: var(--SecondaryDark);
-}
-

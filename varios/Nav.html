@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Apuntes </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Hoja de Estilos -->
+    <link rel="stylesheet" href="Nav.css" />
+  </head>
+  <body>
+    <!-- HEADER con Navegación -->
+    <header class="header">
+      <div class="logo">
+        <img
+          src="https://img.freepik.com/vector-gratis/vector-degradado-logotipo-colorido-pajaro_343694-1365.jpg"
+          alt="Logo"
+          class="logo-img"
+        />
+      </div>
+
+      <!-- 
+        1) El input tipo checkbox (oculto a la vista).
+        2) El label con 3 spans para simular las líneas de la hamburguesa.
+      -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="#introduccion">Introducción</a></li>
+          <li><a href="#breakpoints">Breakpoints</a></li>
+          <li><a href="#ejemplos">Ejemplos</a></li>
+        </ul>
+      </nav>
+      <div>
+        <a class="btn" href="/PAGES/Contact_us.html" id="contact-btn" style="display: inline;">Contact us</a>
+      </div>
+    </header>
+    </body>
+</html>

@@ -1,0 +1,202 @@
+/* 
+  1. VARIABLES Y CONFIGURACIÓN GLOBAL
+  -------------------------------------------------- */
+  :root {
+    --primary-color: #007acc; /* Azul principal */
+    --secondary-color: #e78b11; /* Naranja secundario */
+    --dark-color: #333;
+    --light-color: #fff;
+    --background-light: #f5f5f5;
+    --background-dark: #1a1a1a;
+    --font-main: "Poppins", sans-serif;
+  
+    /* Tipos de fuentes para diferentes usos */
+    --font-size-regular: 1rem;
+    --font-size-large: 1.5rem;
+    --font-size-xlarge: 2rem;
+  
+    /* Transiciones */
+    --transition-normal: 0.3s ease-in-out;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    font-family: var(--font-main);
+    background-color: #dbdbdb;
+    color: var(--dark-color);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  
+  /*
+      2. ENCABEZADO (HEADER) Y NAVEGACIÓN
+      -------------------------------------------------- */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .logo-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+  
+  .nav a {
+    color: var(--light-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color var(--transition-normal);
+  }
+  
+  .nav a:hover {
+    color: var(--secondary-color);
+  }
+
+  /* TABLET: 481px - 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+    .hero-content h2 {
+      font-size: 2.2rem;
+    }
+  
+    /* Navegación con más espacio */
+    .nav ul {
+      gap: 2rem;
+    }
+  }
+  
+/***********************************
+  1. Menú hamburguesa (checkbox hack)
+************************************/
+
+/* Ocultamos el checkbox por defecto */
+.nav-toggle {
+    display: none;
+  }
+  
+  /* Estilo básico del label (hamburguesa) */
+  .nav {
+    z-index: 100;
+  }
+  
+  .nav-toggle-label {
+    display: none; /* Por defecto, oculto en pantallas grandes */
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+  }
+  
+  /* Las tres líneas del icono */
+  .nav-toggle-label span {
+    background-color: black;
+    height: 2px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+  }
+  
+  /* Líneas en su posición inicial */
+  .nav-toggle-label span:nth-child(1) {
+    top: 0.4rem;
+  }
+  .nav-toggle-label span:nth-child(2) {
+    top: 0.9rem;
+  }
+  .nav-toggle-label span:nth-child(3) {
+    top: 1.4rem;
+  }
+  
+  /* Cuando se hace CHECK en el input... */
+  .nav-toggle:checked + .nav-toggle-label span:nth-child(1) {
+    transform: translateY(0.5rem) rotate(45deg);
+  }
+  .nav-toggle:checked + .nav-toggle-label span:nth-child(2) {
+    opacity: 0; /* Ocultamos la línea del medio */
+  }
+  .nav-toggle:checked + .nav-toggle-label span:nth-child(3) {
+    transform: translateY(-0.5rem) rotate(-45deg);
+  }
+  
+  /* 
+      Nav oculta por defecto en pantallas pequeñas.
+      Cuando se hace CHECK en el input, se muestra.
+    */
+  @media (max-width: 760px) {
+    .nav-toggle-label {
+      display: block;
+      margin-left: auto; /* empuja el menú hamburguesa a la derecha */
+    }
+    .nav {
+      display: none;
+      background-color: var(--primary-color);
+      position: absolute;
+      top: 4.5rem; /* un poco debajo del header */
+      right: 0;
+      width: 50%;
+      padding: 1rem;
+      text-align: right;
+      border-top: 2px solid var(--secondary-color);
+    }
+    /* Cuando se activa (checked) el input, mostramos la nav */
+    #nav-toggle:checked + .nav-toggle-label + .nav {
+      display: block;
+    }
+    /* Ajuste del UL en modo vertical */
+    .nav ul {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    /* Centrado del texto a la derecha */
+    .nav li a {
+      width: 100%;
+      display: inline-block;
+      text-align: right;
+    }
+  }
+  
+  /* 
+      En pantallas más grandes, 
+      mostramos el nav normalmente y ocultamos el label
+    */
+  @media (min-width: 761px) {
+    .nav-toggle-label {
+      display: none;
+    }
+    .nav {
+      display: flex; /* el nav se ve siempre en desktop */
+      position: static;
+      width: auto;
+      padding: 0;
+      border-top: none;
+    }
+    .nav ul {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  
