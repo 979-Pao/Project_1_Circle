@@ -112,7 +112,6 @@
 
 }
 
-
 /*PARTNERS*/
 
 .partners {
@@ -139,12 +138,12 @@
 }
 
 .projects-list {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    align-items: center;
-    margin: 0 auto;
-    width: 95%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  margin: 0 auto;
+  width: 95%;
 }
 
 .projects h2 {
@@ -214,9 +213,26 @@
   margin: 10px;
 }
 
-/* CUSTOMERS */
+@media (max-width: 765px) {
+  
+  .projects {
+    width: 90%;
+    margin: 0 auto;
+  }
 
-.customers {
+  .project-items {
+    width: 40%;
+  }
+
+  .projects-list {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+/* REVIEWS */
+
+.reviews {
   background-color: var(--NeutralDark);
   background-image: url("/Img/testimonial-section/orbit.png");
   background-size: cover;
@@ -227,67 +243,68 @@
   text-align: center;
 }
 
-.customers-img {
+.reviews-img {
   background-color: rgba(0, 0, 0, 0);
   display: inline-block;
 }
 
-.customers-img img {
+.reviews-img img {
   max-width: 75px;
   background-color: rgba(0, 0, 0, 0);
   position: absolute;
 }
 
-.customers-img1 {
+.reviews-img1 {
   top: 5%;
   left: 5%;
   right: auto;
   bottom: auto;
 }
 
-.customers-img2 {
+.reviews-img2 {
   top: 5%;
   left: auto;
   right: 5%;
   bottom: auto;
 }
 
-.customers-img3 {
+.reviews-img3 {
   top: auto;
   left: 5%;
   right: auto;
   bottom: 5%;
 }
 
-.customers-img4 {
+.reviews-img4 {
   top: auto;
   left: auto;
   right: 5%;
   bottom: 5%;
 }
 
-.customers-content {
+.reviews-content {
   background-color: var(--NeutralDark);
   padding: 20px;
 }
 
-.customers-content h3 {
+.reviews-content h3 {
   color: var(--White);
   background-color: var(--NeutralDark);
   font-weight: bold;
   font-size: 30px;
 }
 
-.customers-content p {
+.reviews-content p {
   background-color: var(--NeutralDark);
   color: var(--SecondaryDark);
   font-size: 16px;
 }
-.customers-content .Circle {
-    margin: 30px 0px;
-  }
 
-.customers-profile {
+.reviews-content .Circle {
+    margin: 30px 0px;
+}
+
+.reviews-profile {
   background-color: var(--NeutralDark);
   display: flex;
   align-items: center;
@@ -313,6 +330,38 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+
+  .reviews {
+    margin: 30px auto;
+  }
+
+  .reviews-content h3 {
+    font-size: 32px;
+  }
+
+  .reviews-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .reviews-img {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .reviews-content h3 {
+    font-size: 40px;
+  }
+
+  .reviews-content p {
+    font-size: 24px;
+  }
+
 }
 
 /* SERVICES */
@@ -371,3 +420,18 @@
 .service-icon img {
   background-color: var(--PrimaryLighter);
 }
+
+@media (max-width: 768px) {
+  
+  .services, {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .services-list {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+
