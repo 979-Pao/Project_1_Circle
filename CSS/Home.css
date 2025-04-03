@@ -1,9 +1,8 @@
-
 /* HERO */
+
 .hero {
   margin: 60px auto;
   max-width: 80%;
-  display: flex;
 }
 
 .hero-text {
@@ -11,9 +10,7 @@
   flex-flow: column wrap;
   justify-content: center;
   margin-bottom: 20px;
-  margin: 0 auto;
   text-align: left;
-  width: 100%
 }
 
 .hero-text div.hero-btns {
@@ -30,22 +27,9 @@
   text-decoration: none;
 }
 
-.btn {
-  background-color: var(--Primary);
-  color: var(--White);
-  display: inline;
-  margin: 5px;
-}
 .btn2 {
   color: var(--NeutralMedium);
   display: inline;
-}
-
-.btn a {
-  background-color: var(--Primary);
-  color: var(--White);
-  padding: 15px;
-  font-weight: normal;
 }
 
 .hero div.hero-btns a {
@@ -63,7 +47,6 @@
 .hero-main-img {
   width: 600px;
   max-width: 100%;
-  display: inline-block;
 }
 
 .hero-card {
@@ -72,7 +55,7 @@
   top: 0%;
   left: -15%;
   background-color: rgba(0, 0, 0, 0);
-  display: inline-block;
+  display: none;
 }
 
 .hero-card-bottom {
@@ -81,6 +64,54 @@
   right: -15%;
   bottom: -15%;
 }
+
+@media (min-width: 760px) and (max-width: 992px) {
+  .hero-main-img {
+    width: 800px;
+  }
+
+  .hero-card {
+    max-width: 200px;
+  }
+}
+
+/* Tablet */
+
+@media (min-width: 760px) {
+
+  .hero {
+    display: flex;
+  }
+
+  .hero-card {
+    display: inline-block;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 992px) {
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .hero h3 {
+    font-size: 20px;
+  }
+
+  .hero-main-img {
+    width: 800px;
+    max-width: auto;
+  }
+
+  .hero-content {
+    text-align: left;
+    margin-bottom: 50px;
+  }
+
+}
+
 
 /*PARTNERS*/
 

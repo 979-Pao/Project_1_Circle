@@ -27,7 +27,7 @@ body {
   padding: 0;
   background: var(--Background);
   font-family: "Roboto", sans-serif;
-  max-width: 1200px;
+  max-width: 1100px;
 }
 
 a {
@@ -100,6 +100,19 @@ header * {
   color: var(--SecondaryDark);
 }
 
+.btn {
+  background-color: var(--Primary);
+  color: var(--White);
+  display: inline;
+}
+
+.btn a {
+  background-color: var(--Primary);
+  color: var(--White);
+  padding: 15px;
+  font-weight: normal;
+}
+
 .btn a#contact-btn:hover {
   color: var(--SecondaryDark);
 }
@@ -127,13 +140,14 @@ header * {
   display: none; 
   cursor: pointer;
   width: 2rem;
-  height: 2rem;
+  height: 1rem;
   position: relative;
+  margin-right: 8px;
 }
 
 .nav-toggle span {
   background-color:var(--NeutralMedium);
-  height: 2px;
+  height: 3px;
   width: 100%;
   display: block;
   position: absolute;
@@ -169,11 +183,12 @@ header * {
     display: none;
     background-color: var(--NeutralDark);
     position: absolute;
-    top: 5.8rem; 
-    right: 100px;
-    width: 25%;
+    top: 5.5rem; 
+    right: 97px;
+    width: 20%;
     text-align: left;
     border-top: none;
+    opacity: 0.8;
   }
 
   #chkToggle:checked + .nav-toggle + .nav {
@@ -182,7 +197,7 @@ header * {
 
   .nav ul {
     flex-direction: column;
-    gap: 0.4rem;
+    gap: 0.3rem;
     justify-content: center;
   }
 
@@ -223,6 +238,12 @@ header * {
   background-color: var(--SecondaryLight);
 }
 
+.newsletter h2,
+.newsletter h3, 
+.newsletter form {
+  background-color: var(--SecondaryLight);
+}
+
 .newsletter h2 {
   margin-bottom: 20px;
 }
@@ -234,7 +255,7 @@ header * {
 .newsletter input {
   background-color: var(--White);
   border: none;
-  padding: 20px;
+  padding: 20px 30px;
   font-size: 18px;
   display: block;
   margin: auto;
@@ -280,7 +301,7 @@ header * {
   .newsletter form {
     display: flex;
     flex-direction: column; 
-    gap: 20px;
+    gap: 10px;
   }
  
   .newsletter input {
@@ -305,7 +326,7 @@ header * {
 
   .newsletter form {
     display: grid;
-    gap: 55px;
+    gap: 5px;
     grid-template-columns: 2fr 1fr;
   }
 
@@ -346,7 +367,7 @@ header * {
 .footer-info p {
   margin: 30px 0px;
 }
-          
+       
 .footer-links {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
