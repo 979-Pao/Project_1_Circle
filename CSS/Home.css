@@ -422,8 +422,8 @@
 }
 
 @media (max-width: 768px) {
-  
-  .services, {
+
+  .services {
     width: 80%;
     margin: 0 auto;
   }
@@ -432,6 +432,5 @@
     display: flex;
     flex-flow: row wrap;
   }
+
 }
-
-

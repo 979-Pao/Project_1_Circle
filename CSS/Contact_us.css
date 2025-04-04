@@ -96,3 +96,134 @@ input {
   text-decoration: none;
 }
 
+/*Validations*/
+
+.errorForm {
+  color: red;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+#errorSubmit {
+  justify-items: center;
+  font-size: 30px;
+  border-radius: 10px;
+  height: 40px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.success-message {
+  position: relative;
+  color: green;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 15px 40px 15px 15px;
+  border: 2px solid green;
+  border-radius: 8px;
+  background-color: #e7fce7;
+  text-align: center;
+  max-width: 500px;
+  margin-inline: auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  border: none;
+  background: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: green;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: darkgreen;
+}
+
+@media (min-width: 500px) and (max-width: 760px) {
+
+  .contact-form h1 {
+    font-size: 20px;
+  }
+
+  .field_email-phone {
+    display: block;
+  }
+
+  #email {
+    width: 100%;
+  }
+
+  #phone {
+    width: 100%;
+  }
+
+  .contact-form {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .errorForm {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 500px) {
+
+  .contact-form h1 {
+    font-size: 36px;
+  }
+
+  .contact-form {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .errorForm {
+    margin-top: 10px;
+  }
+
+  #errorSubmit {
+    font-size: 25px;
+    height: 30px;
+  }
+
+  .field_email-phone {
+    display: block;
+  }
+
+  #email {
+    width: 100%;
+  }
+
+  #phone {
+    width: 100%;
+  }
+
+  #message {
+    width: 100%;
+  }
+
+  .submit {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .field_email-phone {
+    display: flex;
+  }
+
+  #email {
+    width: 94%;
+  }
+
+  .contact-form h1 {
+    font-size: 50px;
+  }
+}
+
+
+

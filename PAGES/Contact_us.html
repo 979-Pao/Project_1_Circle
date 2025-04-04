@@ -34,26 +34,31 @@
   </header>
 
   <section class="contact-us-section">
-   <form class="contact-form">
+   <form class="contact-form" id="myForm">
     <h1>Contact Us</h1>
+
    <div class="field_name">
     <label for="full-name">Full Name</label>
      <div>
-     <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required/>
-     </div>
+     <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" onblur="validateName()" required/>
+     <p hidden class="errorForm" id="errorName">Complete the field NAME</p>
+    </div>
    </div>
 
    <div class="field_email-phone">
     <div>
     <label for="email">Email</label>
      <div>
-     <input type="email" id="email" name="email" placeholder="Enter your email address" required/>
+     <input type="email" id="email" name="email" placeholder="Enter your email address" onblur="validateEmail()" required/>
+     <p hidden class="errorForm" id="errorEmail">Complete the field EMAIL</p>
+     <p hidden class="errorForm" id="errorFormatEmail">Invalid email</p>
      </div>
      </div>
      <div>
      <label for="phone">Phone</label>
      <div>
-     <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required/>
+     <input type="text" id="phone" name="phone" placeholder="Enter your phone number" onblur="validatePhone()" required/>
+     <p hidden class="errorForm" id="errorPhone">Enter your phone number</p>
      </div>
      </div>
    </div>
@@ -61,13 +66,19 @@
    <div class="field-message">
     <label for="message">Message</label>
      <div>
-     <textarea id="message" name="message" placeholder="Write your message here ...." required></textarea>
-     </div>
+     <textarea id="message" name="message" placeholder="Write your message here ...." onblur="validateMessage()" required></textarea>
+     <p hidden class="errorForm" id="errorMessageUser">Write us at least 5 characters</p>
+    </div>
    </div>
 
-
-     <button type="submit" class="submit" id="submitForm">Submit</button>
-   </form>
+    <button type="button" class="submit" id="submitForm" onclick="sendForm()">Submit</button>
+    <p class="errorForm" id="errorSubmit" hidden>Please, Review the required fields</p>
+    
+   <div id="successMessage" class="success-message" hidden>
+      ✅ Thank you! Your form has been sent successfully!!
+      <button id="closeSuccess" class="close-btn" onclick="closeSuccessMessage()">✖</button>
+   </div>
+    </form>
   </section>
 
   <footer class="footer">
@@ -84,6 +95,8 @@
       <li><a href="#">Privacy Policy</a></li>
     </ul>
   </footer>
+
+  <script src="/JS/Contact_us.js"></script>
 
 </body>
 
