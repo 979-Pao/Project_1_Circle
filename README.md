@@ -47,7 +47,7 @@ El endpoint se utilizó para recuperar datos mediante una función asíncrona (f
 
 width 760px, tablets
 
-width 500px, mobile
+width 400px, mobile
 
 ## Estructura del proyecto
 
