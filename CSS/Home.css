@@ -65,7 +65,7 @@
   bottom: -15%;
 }
 
-@media (min-width: 760px) and (max-width: 992px) {
+@media (min-width: 760px) and (max-width: 990px) {
   .hero-main-img {
     width: 800px;
   }
@@ -74,8 +74,6 @@
     max-width: 200px;
   }
 }
-
-/* Tablet */
 
 @media (min-width: 760px) {
 
@@ -88,9 +86,7 @@
   }
 }
 
-/* Desktop */
-
-@media (min-width: 992px) {
+@media (min-width: 990px) {
 
   h1 {
     font-size: 40px;
@@ -332,7 +328,7 @@
   border-radius: 50%;
 }
 
-@media (min-width: 500px) and (max-width: 760px) {
+@media (min-width: 400px) and (max-width: 760px) {
 
   .reviews-img {
     display: none;
@@ -359,8 +355,8 @@
 
 }
 
-@media (min-width: 761px) {
-
+@media (max-width: 761px) {
+  
   .reviews-content h3 {
     font-size: 35px;
   }
@@ -448,7 +444,7 @@
   background-color: var(--PrimaryLighter);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 760px) {
 
   .services {
     width: 80%;

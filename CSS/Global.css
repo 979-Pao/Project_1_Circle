@@ -117,7 +117,7 @@ header * {
   color: var(--SecondaryDark);
 }
 
-@media (min-width: 481px) and (max-width: 760px) {
+@media (min-width: 500px) and (max-width: 760px) {
   
   .nav ul {
     gap: 2rem;
@@ -403,7 +403,7 @@ header * {
   align-items: center;
   justify-content: space-between;
   margin: 40px 0px;
-  flex-wrap: wrap; /* Permite mejor respuesta en rangos estrechos */
+  flex-wrap: wrap; 
 }
 
 .footer p,
