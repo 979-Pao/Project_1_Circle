@@ -1,18 +1,17 @@
-# **Proyecto IronHack
+# Proyecto IronHack - Circle Agency.
 
 El proyecto está basado en el diseño proporcionado en este archivo de Figma: 
 
 https://www.figma.com/file/fO1DtHTp1oVIV03V4o0kMx/mid-term-project?type=design&node-id=0-1&mode=design&t=1MhBfRFdA3Z6wwR6-0
 
----
 
 ## Enlace a la URL de implementación y presentación.
 
 Netlify: (https://project1-circle-paomont.netlify.app/)
-Repositorio en GitHub: (https://github.com/979-Pao/Project_1_Circle)
-Presentación: ()
 
----
+Repositorio en GitHub: (https://github.com/979-Pao/Project_1_Circle)
+
+Presentación: ()
 
 ## Tecnologías utilizadas:
 
@@ -22,17 +21,15 @@ CSS: Estilos, incluyendo las MediaQueries responsive.
 
 JavaScript: Para funcionalidades como la validacion del formulario contact y el boton Scroll, recuperacion datos mediante fetch, para introduccion a los campos de proyectos.
 
----
-
 ## Contenido del sitio web
 
 Sitio web para una empresa ficticia de diseño web. Incluye tres páginas:
 
 Página de inicio
-Página de proyectos
-Página de contacto con un formulario
 
----
+Página de proyectos
+
+Página de contacto con un formulario
 
 ## Funcionalidades HTML / CSS / JS
 
@@ -46,14 +43,11 @@ En el formulario de contacto en respuesta a la validación: resaltar o desresalt
 
 El endpoint se utilizó para recuperar datos mediante una función asíncrona (fetch) e inyectarlos dinámicamente en los campos requeridos de la página del proyecto (projects.html) mediante JavaScript y el DOM (Modelo de Objetos del Documento).
 
---- 
-
 ## Diseño responsive
 
 width 760px, tablets
-width 500px, mobile
 
----
+width 500px, mobile
 
 ## Estructura del proyecto
 
@@ -69,7 +63,6 @@ Carpeta CSS: Global, Home, Contact_us y Projects
 
 Carpeta JS: Home, Contact_us y Projects
 
----
 
 Paola Montaño.
 
