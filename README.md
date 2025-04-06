@@ -11,7 +11,7 @@ Netlify: (https://project1-circle-paomont.netlify.app/)
 
 Repositorio en GitHub: (https://github.com/979-Pao/Project_1_Circle)
 
-Presentación: ()
+Presentación: (https://acrobat.adobe.com/id/urn:aaid:sc:va6c2:518f500d-4898-46ba-9bcc-bb3d07a1f796)
 
 ## Tecnologías utilizadas:
 
@@ -41,7 +41,7 @@ Encabezado (Barra navegacion) y pie de página (Footer) comunes para todas las p
 
 En el formulario de contacto en respuesta a la validación: resaltar o desresaltar campos incorrectos y limpiar datos tras un envío exitoso
 
-El endpoint se utilizó para recuperar datos mediante una función asíncrona (fetch) e inyectarlos dinámicamente en los campos requeridos de la página del proyecto (projects.html) mediante JavaScript y el DOM (Modelo de Objetos del Documento).
+El endpoint (https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects) se utilizó para recuperar datos mediante una función asíncrona (fetch) e inyectarlos dinámicamente en los campos requeridos de la página del proyecto (projects.html) mediante JavaScript y el DOM (Modelo de Objetos del Documento).
 
 ## Diseño responsive
 
