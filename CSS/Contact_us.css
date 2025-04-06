@@ -141,7 +141,7 @@ input {
   color: darkgreen;
 }
 
-@media (min-width: 500px) and (max-width: 760px) {
+@media (min-width: 400px) and (max-width: 760px) {
 
   .contact-form h1 {
     font-size: 20px;
@@ -168,7 +168,7 @@ input {
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 400px) {
 
   .contact-form h1 {
     font-size: 36px;

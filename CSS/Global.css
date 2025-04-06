@@ -117,7 +117,7 @@ header * {
   color: var(--SecondaryDark);
 }
 
-@media (min-width: 500px) and (max-width: 760px) {
+@media (min-width: 400px) and (max-width: 760px) {
   
   .nav ul {
     gap: 2rem;
@@ -438,7 +438,7 @@ header * {
   text-decoration: underline;
 }
 
-@media (min-width: 500px) and (max-width: 760px) {
+@media (min-width: 400px) and (max-width: 760px) {
   
   .footer {
     display: flex;
